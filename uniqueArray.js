@@ -1,15 +1,34 @@
 const arr = ["🍭", "🍬", "🍬", "🍬", "🍰", "🍰", "🍫"];
 
-// Set
-const uniqueArray1 = [...new Set(arr)];
+/**
+ * @description Get a unique array copy out of your array using Set data structure
+ * @name uniqueArray
+ * @param {Array} arr
+ * @returns {Array}
+ */
+function uniqueArray(arr) {
+  return [...new Set(arr)];
+}
 
-// filter
-const uniqueArray2 = arr.filter((item, index) => arr.indexOf(item) === index);
+/**
+ * @description Get a unique array copy out of your array using filter technique.
+ * @name uniqueArray2
+ * @param {Array} arr
+ * @returns {Array}
+ */
+function uniqueArray2(arr) {
+  return arr.filter((el, i) => arr.indexOf(el) === i);
+}
 
-// reduce
-const uniqueArray3 = arr.reduce(
-  (unique, item) => (unique.includes(item) ? unique : [...unique, item]),
-  []
-);
+/**
+ * @description Get a unique array copy out of your array using filter technique.
+ * @name uniqueArray3
+ * @param {Array} arr
+ * @returns {Array}
+ */
+function uniqueArray3(arr) {
+  return arr.reduce((uni, el) => (uni.includes(el) ? uni : [...uni, el]), []);
+}
 
-console.log(uniqueArray3); // [ '🍭', '🍬', '🍰', '🍫' ]
+let myArr = uniqueArray(arr);
+console.log(myArr); // [ '🍭', '🍬', '🍰', '🍫' ]

@@ -12,4 +12,3 @@ class Person {
 
 var john = new Person("john", "doe");
 console.log(john.greet());
-hhi
