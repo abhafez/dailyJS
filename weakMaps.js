@@ -6,10 +6,8 @@ let myWeakMap = new WeakMap();
 myWeakMap.set(a, { c: 2 });
 myWeakMap.set(b, 27);
 
-console.log(myWeakMap.get(a));
+console.log(myWeakMap.get(a)); // { c: 2 }
 
-a = myWeakMap.get(a);
+let gettingItemB = myWeakMap.get(b);
 
-console.log(myWeakMap.get(a));
-
-console.log(a);
+console.log(gettingItemB); // 27

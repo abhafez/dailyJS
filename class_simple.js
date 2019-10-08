@@ -4,11 +4,10 @@ class Person {
     this.lastName = lastName;
   }
 
-
-  greet = () => {
+  greet() {
     return `Hello ${this.firstName}`;
-  };
+  }
 }
 
 var john = new Person("john", "doe");
-console.log(john.greet());
+console.log(john.greet()); // Hello john
