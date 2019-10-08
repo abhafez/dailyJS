@@ -8,13 +8,13 @@ class Car {
   }
 }
 
-var MyCar = new Car();
-MyCar.setDrivingSound("Vrooom");
+const MyCar = new Car();
+MyCar.setDrivingSound('Vrooom');
 console.log(MyCar.drive()); // Vrooom
 
-var truck = {
-  sound: "FOOOOOOOO",
-  truckDrive: MyCar.drive
+const truck = {
+  sound: 'FOOOOOOOO',
+  truckDrive: MyCar.drive,
 };
 
 console.log(truck.truckDrive()); // FOOOOOOOO

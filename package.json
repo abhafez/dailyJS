@@ -1,0 +1,25 @@
+{
+  "name": "dailyjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class_simple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhafez/dailyJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhafez/dailyJS/issues"
+  },
+  "homepage": "https://github.com/abhafez/dailyJS#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "prettier": "^1.18.2"
+  }
+}

@@ -9,5 +9,5 @@ class Person {
   }
 }
 
-var john = new Person("john", "doe");
+const john = new Person('john', 'doe');
 console.log(john.greet()); // Hello john
